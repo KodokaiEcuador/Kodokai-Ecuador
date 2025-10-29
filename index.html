@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodokai Ecuador - Karate Do</title>
+    <style>
+        /* ---------- ESTILOS GENERALES ---------- */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        header {
+            background: linear-gradient(90deg, #000, #002147, #000);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 40px;
+        }
+
+        header img {
+            height: 80px;
+        }
+
+        nav a {
+            color: gold;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: red;
+        }
+
+        /* ---------- SECCIÓN HERO ---------- */
+        .hero {
+            background: url('dojo1.jpeg') center/cover no-repeat;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero-content {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border: 2px solid gold;
+            border-radius: 10px;
+        }
+
+        .hero-content h1 {
+            font-size: 3em;
+            color: gold;
+            margin-bottom: 10px;
+        }
+
+        .hero-content p {
+            font-size: 1.2em;
+            color: #fff;
+        }
+
+        /* ---------- SECCIÓN SOBRE NOSOTROS ---------- */
+        .section {
+            padding: 60px 10%;
+            background-color: #111;
+        }
+
+        .section h2 {
+            color: gold;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        .section p {
+            text-align: center;
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+
+        /* ---------- SECCIÓN INSTRUCTORES ---------- */
+        .instructores {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .sensei-card {
+            background: #222;
+            border: 2px solid gold;
+            border-radius: 10px;
+            width: 280px;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .sensei-card h3 {
+            color: gold;
+        }
+
+        /* ---------- SECCIÓN HORARIOS ---------- */
+        .horarios {
+            background: linear-gradient(180deg, #000, #111);
+            color: #fff;
+            padding: 60px 10%;
+        }
+
+        .horarios table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .horarios th, .horarios td {
+            border: 1px solid gold;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .horarios th {
+            background-color: red;
+            color: #fff;
+        }
+
+        .horarios td {
+            background-color: #222;
+        }
+
+        /* ---------- CONTACTO ---------- */
+        footer {
+            background-color: #000;
+            color: gold;
+            text-align: center;
+            padding: 30px 10px;
+        }
+
+        footer p {
+            margin: 8px 0;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <img src="logo-kodokai.jpeg" alt="Logo Kodokai Ecuador">
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#instructores">Instructores</a>
+            <a href="#horarios">Horarios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Kodokai Ecuador</h1>
+            <p>Disciplina, respeto y superación a través del Karate Do</p>
+        </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="section" id="nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>
+            En <strong>Kodokai Ecuador</strong>, enseñamos Karate Do con pasión y dedicación. 
+            Aceptamos niños, adolescentes, adultos y practicantes de Para-Karate de todas las edades.
+            Nuestro dojo se encuentra en la <strong>Mitad del Mundo</strong>, brindando un espacio de aprendizaje, respeto y crecimiento personal.
+        </p>
+    </section>
+
+    <!-- INSTRUCTORES -->
+    <section class="section" id="instructores">
+        <h2>Instructores</h2>
+        <div class="instructores">
+            <div class="sensei-card">
+                <h3>Sensei José Matheus</h3>
+                <p>1er Dan - Cinturón Negro Federacion Ecuatoriana de Karate-Do</p>
+            </div>
+            <div class="sensei-card">
+                <h3>Senpai Anthony Rosales</h3>
+                <p>Cinturón Marrón - 1er Kyu</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HORARIOS -->
+    <section class="horarios" id="horarios">
+        <h2>Horarios de Entrenamiento</h2>
+        <p>De lunes a viernes</p>
+        <table>
+            <tr>
+                <th>Hora</th>
+                <th>Disponibilidad</th>
+            </tr>
+            <tr><td>08:00 - 09:00 AM</td><td>Disponible</td></tr>
+            <tr><td>09:00 - 10:00 AM</td><td>Disponible</td></tr>
+            <tr><td>10:00 - 11:00 AM</td><td>Disponible</td></tr>
+            <tr><td>11:00 - 12:00 PM</td><td>Disponible</td></tr>
+            <tr><td>03:00 - 04:00 PM</td><td>Disponible</td></tr>
+            <tr><td>04:00 - 05:00 PM</td><td>Disponible</td></tr>
+            <tr><td>05:00 - 06:00 PM</td><td>Disponible</td></tr>
+            <tr><td>06:00 - 07:00 PM</td><td>Disponible</td></tr>
+            <tr><td>07:00 - 08:00 PM</td><td>Disponible</td></tr>
+        </table>
+    </section>
+
+    <!-- CONTACTO -->
+    <footer id="contacto">
+        <h2>Contáctanos</h2>
+        <p><strong>Teléfonos:</strong> 0995795550 / 025110332</p>
+        <p><strong>Dirección:</strong> Quito, Pichincha, Mitad del Mundo - Sector San Antonio de Pichincha, Avenida Equinoccial</p>
+        <p>© 2025 Kodokai Ecuador - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
